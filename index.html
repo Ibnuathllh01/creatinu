@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CREATINU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,sans-serif;
+}
+
+body{
+    background:#050505;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Background Color Grade */
+
+.bg1{
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:rgba(255,255,255,.06);
+    filter:blur(150px);
+    top:-150px;
+    left:-150px;
+    border-radius:50%;
+}
+
+.bg2{
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:rgba(255,255,255,.03);
+    filter:blur(120px);
+    bottom:-100px;
+    right:-100px;
+    border-radius:50%;
+}
+
+/* Navbar */
+
+nav{
+    width:100%;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.03);
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:4px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:35px;
+    opacity:.8;
+    transition:.3s;
+}
+
+.menu a:hover{
+    opacity:1;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:85px;
+    line-height:1;
+    max-width:900px;
+}
+
+.hero p{
+    margin-top:25px;
+    color:#bdbdbd;
+    max-width:650px;
+    line-height:1.8;
+}
+
+.buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+/* Glass Button */
+
+.btn{
+    padding:15px 35px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    color:white;
+    text-decoration:none;
+    transition:.35s;
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.35),
+    inset 0 1px 1px rgba(255,255,255,.15);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.1);
+}
+
+/* Portfolio */
+
+.section{
+    padding:100px 8%;
+}
+
+.section h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    height:280px;
+    border-radius:25px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#888;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.06);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg1"></div>
+<div class="bg2"></div>
+
+<nav>
+    <div class="logo">CREATINU</div>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>DESIGN THAT MAKES PEOPLE STOP SCROLLING.</h1>
+
+    <p>
+        Creatinu membantu brand tampil lebih profesional
+        melalui desain visual yang clean, modern,
+        dan mudah diingat.
+    </p>
+
+    <div class="buttons">
+        <a href="#" class="btn">View Portfolio</a>
+        <a href="#" class="btn">Order Now</a>
+    </div>
+</section>
+
+<section class="section">
+
+<h2>Selected Works</h2>
+
+<div class="grid">
+
+<div class="card">
+LOGO DESIGN
+</div>
+
+<div class="card">
+SOCIAL MEDIA
+</div>
+
+<div class="card">
+PACKAGING
+</div>
+
+<div class="card">
+POSTER
+</div>
+
+<div class="card">
+WEBSITE
+</div>
+
+<div class="card">
+BRANDING
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 CREATINU — Crafted with simplicity.
+</footer>
+
+</body>
+</html>
