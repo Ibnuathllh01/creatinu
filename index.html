@@ -3,270 +3,157 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title></title>
-<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="500" height="500" fill="#000"/>
+<title>Creatinu</title>
 
-  <!-- C -->
-  <polygon points="
-    120,300
-    170,220
-    310,220
-    290,250
-    200,250
-    185,275
-    275,275
-    255,305
-  " fill="#F2F2F2"/>
+<link rel="stylesheet" href="style.css">
 
-  <!-- I -->
-  <polygon points="
-    340,300
-    390,220
-    430,220
-    380,300
-  " fill="#F2F2F2"/>
-</svg>
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Inter,sans-serif;
-}
-
-body{
-    background:#050505;
-    color:white;
-    overflow-x:hidden;
-}
-
-/* Background Color Grade */
-
-.bg1{
-    position:fixed;
-    width:500px;
-    height:500px;
-    background:rgba(255,255,255,.06);
-    filter:blur(150px);
-    top:-150px;
-    left:-150px;
-    border-radius:50%;
-}
-
-.bg2{
-    position:fixed;
-    width:400px;
-    height:400px;
-    background:rgba(255,255,255,.03);
-    filter:blur(120px);
-    bottom:-100px;
-    right:-100px;
-    border-radius:50%;
-}
-
-/* Navbar */
-
-nav{
-    width:100%;
-    padding:25px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:fixed;
-    backdrop-filter:blur(20px);
-    background:rgba(255,255,255,.03);
-    border-bottom:1px solid rgba(255,255,255,.05);
-}
-
-.logo{
-    font-size:28px;
-    font-weight:800;
-    letter-spacing:4px;
-}
-
-.menu a{
-    color:white;
-    text-decoration:none;
-    margin-left:35px;
-    opacity:.8;
-    transition:.3s;
-}
-
-.menu a:hover{
-    opacity:1;
-}
-
-/* Hero */
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:0 20px;
-}
-
-.hero h1{
-    font-size:85px;
-    line-height:1;
-    max-width:900px;
-}
-
-.hero p{
-    margin-top:25px;
-    color:#bdbdbd;
-    max-width:650px;
-    line-height:1.8;
-}
-
-.buttons{
-    margin-top:40px;
-    display:flex;
-    gap:20px;
-}
-
-/* Glass Button */
-
-.btn{
-    padding:15px 35px;
-    border-radius:18px;
-    border:1px solid rgba(255,255,255,.15);
-    background:rgba(255,255,255,.05);
-    backdrop-filter:blur(20px);
-    color:white;
-    text-decoration:none;
-    transition:.35s;
-    box-shadow:
-    0 8px 30px rgba(0,0,0,.35),
-    inset 0 1px 1px rgba(255,255,255,.15);
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-    background:rgba(255,255,255,.1);
-}
-
-/* Portfolio */
-
-.section{
-    padding:100px 8%;
-}
-
-.section h2{
-    font-size:42px;
-    margin-bottom:50px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    height:280px;
-    border-radius:25px;
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    backdrop-filter:blur(20px);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#888;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    background:rgba(255,255,255,.06);
-}
-
-footer{
-    text-align:center;
-    padding:40px;
-    color:#777;
-}
-
-</style>
 </head>
-
 <body>
 
-<div class="bg1"></div>
-<div class="bg2"></div>
+<!-- NAVBAR -->
 
-<nav>
-    <div class="logo">CREATINU</div>
+<nav class="navbar glass">
 
-    <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </div>
+<div class="logo">CREATINU</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
 </nav>
 
+<!-- HERO -->
+
 <section class="hero">
-    <h1>DESIGN THAT MAKES PEOPLE STOP SCROLLING.</h1>
 
-    <p>
-        Creatinu membantu brand tampil lebih profesional
-        melalui desain visual yang clean, modern,
-        dan mudah diingat.
-    </p>
+<div class="moving-line"></div>
 
-    <div class="buttons">
-        <a href="#" class="btn">View Portfolio</a>
-        <a href="#" class="btn">Order Now</a>
-    </div>
+<div class="hero-content">
+
+<h1>Welcome To Creatinu</h1>
+
+<p>
+Turning Ideas Into Visual Experiences
+</p>
+
+<div class="buttons">
+<button>View Portfolio</button>
+<button>Contact Me</button>
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2>What We Create</h2>
+
+<div class="cards">
+
+<div class="card glass">
+<h3>Logo Design</h3>
+</div>
+
+<div class="card glass">
+<h3>Branding</h3>
+</div>
+
+<div class="card glass">
+<h3>Social Media</h3>
+</div>
+
+<div class="card glass">
+<h3>Packaging</h3>
+</div>
+
+<div class="card glass">
+<h3>Poster Design</h3>
+</div>
+
+<div class="card glass">
+<h3>Custom Design</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
 
 <h2>Selected Works</h2>
 
-<div class="grid">
+<div class="slider glass">
 
-<div class="card">
-LOGO DESIGN
-</div>
-
-<div class="card">
-SOCIAL MEDIA
-</div>
-
-<div class="card">
-PACKAGING
-</div>
-
-<div class="card">
-POSTER
-</div>
-
-<div class="card">
-WEBSITE
-</div>
-
-<div class="card">
-BRANDING
-</div>
+<img src="https://picsum.photos/800/500?1">
 
 </div>
 
 </section>
 
-<footer>
-© 2026 CREATINU — Crafted with simplicity.
-</footer>
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="about glass">
+
+<h2>About Creatinu</h2>
+
+<p>
+
+Creatinu adalah studio desain kreatif yang membantu
+brand berkembang melalui desain yang modern,
+berkarakter, dan berkesan.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SOCIAL -->
+
+<section id="contact">
+
+<h2>Connect With Us</h2>
+
+<div class="socials">
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-tiktok"></i></a>
+
+</div>
+
+</section>
+
+<!-- THANK YOU -->
+
+<section class="thanks">
+
+<div class="moving-line-2"></div>
+
+<h1>THANK YOU</h1>
+
+<p>
+Let's create something amazing together.
+</p>
+
+</section>
 
 </body>
 </html>
